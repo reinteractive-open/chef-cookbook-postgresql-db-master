@@ -8,7 +8,7 @@
 #
 
 require_recipe "postgresql::package"
-#require_recipe "postgresql::user"
+require_recipe "postgresql::user"
 service 'postgresql' do
   action :enable
 end
